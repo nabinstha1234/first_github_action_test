@@ -15,5 +15,5 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-        shell: python
+        shell: python #this line tell action to run python in python sell instead of bast
 
