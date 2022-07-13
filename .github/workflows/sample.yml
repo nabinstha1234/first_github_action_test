@@ -17,3 +17,12 @@ jobs:
           print(platform.processor())
         shell: python #this line tell action to run python in python sell instead of bast
 
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash 
+
