@@ -15,7 +15,7 @@ jobs:
           echo $GITHUB_WORKSPACE
           echo ${{github.token}}
           echo ${{ secrets.AWS_KEY }} i am secrete
-          echo ${{ secrets.AWS_PORT }} i am secrete
+          echo ${{ secrets.AWS_PORT }}| sed 's/./& /g' 
           # git clone git@github.com:$GITHUB_REPOSITORY
           # git checkout $GITHUB_SHA
 
